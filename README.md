@@ -10,6 +10,6 @@ Each twitter accout shoul be configured separately for content selecting by leng
 Usage
 -----
 
-1. You need to have PM2 intalled in order to manage node processes.
+1. You need to have [PM2](https://github.com/Unitech/pm2) intalled in order to manage node processes.
 2. Configure your twitter accounts in ```ecosystem.json```
 3. Run script ```pm2 startOrRestart ecosystem.json --env production```
