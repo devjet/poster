@@ -1,2 +1,5 @@
 # poster
-Re-invention of Automatic Social Media content posting
+Poting content from VK to twitter made easy.
+
+
+
