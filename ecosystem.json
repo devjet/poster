@@ -1,0 +1,47 @@
+{
+  apps: [
+    {
+      name: "a29",
+      script: "app.js",
+      env: {
+        COLLECTION:"a29",
+        SCHTICK_SCHEDULE:'hour(*%1)',
+        QUERY_LIKES_COUNT: '<=100',
+        QUERY_ATTACHMENTS_PHOTO_EXISTS: true,
+        QUERY_POSTED_TO_TWITTER_FIELD_EXISTS: false,
+        QUERY_ATTACHMENTS_EXISTS : true,
+        QUERY_ATTACHMENTS_LENGTH_ABOVE : '>= 1',
+        QUERY_ATTACHMENTS_LENGTH_BELOW : '<= 4',
+        QUERY_TEXT_LENGTH:'<= 116',
+        TWIT_CONSUMER_KEY : '--SECRET, PLACE YOUR OWN--',
+        TWIT_CONSUMER_SECRET: '--SECRET, PLACE YOUR OWN--',
+        TWIT_ACCESS_TOKEN: '--SECRET, PLACE YOUR OWN--',
+        TWIT_ACCESS_SECRET: '--SECRET, PLACE YOUR OWN--',
+      },
+      env_production: {
+        NODE_ENV: "production"
+      }
+    },
+    {
+      name: "donotdisturb",
+      script: "app.js",
+      env: {
+        COLLECTION:"donotdisturb",
+        SCHTICK_SCHEDULE:'hour(*%1)',
+        QUERY_LIKES_COUNT: '<= 5800',
+        QUERY_ATTACHMENTS_PHOTO_EXISTS: true,
+        QUERY_ATTACHMENTS_LENGTH_ABOVE : '>= 1',
+        QUERY_ATTACHMENTS_LENGTH_BELOW : '<= 4',
+        QUERY_POSTED_TO_TWITTER_FIELD_EXISTS: false,
+        QUERY_TEXT_LENGTH:'<= 140',
+        TWIT_CONSUMER_KEY : '--SECRET, PLACE YOUR OWN--',
+        TWIT_CONSUMER_SECRET: '--SECRET, PLACE YOUR OWN--',
+        TWIT_ACCESS_TOKEN: '--SECRET, PLACE YOUR OWN--',
+        TWIT_ACCESS_SECRET: '--SECRET, PLACE YOUR OWN--',
+      },
+      env_production: {
+        NODE_ENV: "production"
+      }
+    },
+  ]
+}
