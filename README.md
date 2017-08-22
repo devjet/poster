@@ -4,7 +4,7 @@ Poting content from VK to twitter made easy.
 Objective
 --------
 Make automated posting content from VK to twitter. 
-Each twitter accout shoul be configured separately for content selecting by length, type and likes count. Also there shoul be flexible method to setup posting interval.
+Each twitter accout should be configured separately for content selecting by length, type and likes count. Also there should be flexible method to setup posting interval.
 
 
 Usage
